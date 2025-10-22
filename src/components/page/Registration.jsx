@@ -54,7 +54,7 @@ const Registration = () => {
         if (!email) {
             setEmailError("Email is required");
         } else {
-            if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+            if (!/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
                 setEmailError("Please enter the correct email")
             }
         }
@@ -81,7 +81,7 @@ const Registration = () => {
 
         console.log(email, fullName, password)
 
-        if (email && fullName && password && (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) && (/^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})/.test(password))) {
+        if (email && fullName && password && (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email)) && (/^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})/.test(password))) {
             setLoading(true);
 
             createUserWithEmailAndPassword(auth, email, password)

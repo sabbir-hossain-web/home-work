@@ -3,13 +3,17 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import Registration from "./components/page/Registration";
 import Login from "./components/page/Login"
-import firebaseConfig from "./components/firebase/firebaseConfig";
+// import firebaseConfig from "./components/firebase/firebaseConfig";
 import ForgotPassword from "./components/page/ForgotPassword";
-
+import WelcomePage from "./components/page/Welcome";
 
 function App() {
 
   const router = createBrowserRouter([
+     {
+      path: "/",
+      element: <Welcome></Welcome>,
+    },
     {
       path: "/registration",
       element: <Registration></Registration>,
