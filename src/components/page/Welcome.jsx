@@ -16,14 +16,14 @@ export default function Welcome() {
 
   return (
     <div className="bg-black min-h-screen flex justify-center items-center">
-      <div className="bg-white rounded-2xl shadow-lg p-8 w-80 text-center">
+      <div className="bg-white rounded-2xl shadow-lg p-30 w-200 text-center">
       
         <div className="flex justify-center mb-4">
-          <h6 className="rounded-full text-white bg-blue-500">logo</h6>
+          <h6 className="rounded-full text-[50px] text-white bg-blue-500">logo</h6>
         </div>
 
        
-        <h2 className="text-xl font-bold mb-6">Welcome to Post-Man</h2>
+        <h2 className="text-[40px] font-bold mb-6">Welcome to Post-Man</h2>
 
     
         <div className="flex items-center justify-center mb-6">
@@ -39,7 +39,7 @@ export default function Welcome() {
           />
           <label
             htmlFor="agree"
-            className={`text-sm ${
+            className={`text-[20px] ${
               error ? "text-red-600 font-semibold" : "text-gray-800"
             }`}
           >
