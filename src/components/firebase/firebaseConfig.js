@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAkSSvxIUeYaqsCXO1sbyxz8WR_Cjbn9go",
-  authDomain: "postman-4cea1.firebaseapp.com",
-  projectId: "postman-4cea1",
-  storageBucket: "postman-4cea1.firebasestorage.app",
-  messagingSenderId: "435615165467",
-  appId: "1:435615165467:web:b8eb411f21cc327b6adcbe"
+  apiKey: "AIzaSyAhS-UlriKm8u0MooG2QTKR10caKewJZ3o",
+  authDomain: "postman-chat-afe14.firebaseapp.com",
+  projectId: "postman-chat-afe14",
+  storageBucket: "postman-chat-afe14.firebasestorage.app",
+  messagingSenderId: "368853009799",
+  appId: "1:368853009799:web:811a4452222c58bc07bf22"
 };
 
 // Initialize Firebase
